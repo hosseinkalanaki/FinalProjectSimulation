@@ -1,0 +1,18 @@
+[
+    {
+        "module":1,
+        "type":"temperature"
+    },
+    {
+        "module":2,
+        "type":"temperature"
+    },
+    {
+        "module":3,
+        "type":"temperature"
+    },
+    {
+        "module":4,
+        "type":"humidity"
+    }
+]
