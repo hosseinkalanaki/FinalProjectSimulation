@@ -11,7 +11,7 @@ def load_config(file_path):
         return json.load(file)
 
 # Generate a new value within the constraints
-def generate_value(prev_value, min_value=20, max_value=38, max_change=1):
+def generate_value(prev_value, min_value=-80, max_value=80, max_change=1):
     delta = random.uniform(-max_change, max_change)
     new_value = prev_value + delta
     new_value = max(min(new_value, max_value), min_value)
@@ -39,7 +39,7 @@ def simulate_sensors(config, previous_values):
 
 # TCP Server to broadcast messages to clients
 class TCPServer:
-    def __init__(self, host='0.0.0.0', port=6400):
+    def __init__(self, host='0.0.0.0', port=8080):
         self.host = host
         self.port = port
         self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
