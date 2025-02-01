@@ -39,7 +39,7 @@ def simulate_sensors(config, previous_values):
 
 # TCP Server to broadcast messages to clients
 class TCPServer:
-    def __init__(self, host='0.0.0.0', port=6400):
+    def __init__(self, host='0.0.0.0', port=80):
         self.host = host
         self.port = port
         self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

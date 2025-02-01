@@ -11,7 +11,7 @@ COPY . .
 RUN pip install --no-cache-dir schedule
 
 # Expose the TCP server port
-EXPOSE 8080
+EXPOSE 80
 
 # Run the Python script when the container launches
 CMD ["python", "main.py"]
